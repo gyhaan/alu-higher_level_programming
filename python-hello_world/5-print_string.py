@@ -1,3 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 str = "Holbetron School"
-print(3 * str + "\n" + str[:9] + "\n")
+print((3 * str) "\"")
+print(str[:9])
+print()
