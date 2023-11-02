@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-str = "Holbetron School"
-print(3 * str)
-print(str[:9])
+stealth = "Holbetron School"
+print(3 * stealth)
+print(stealth[:9])
 print()
