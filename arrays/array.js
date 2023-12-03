@@ -4,6 +4,4 @@ console.log(plants.pop());
 
 console.log(plants);
 
-plants.pop();
-
-console.log(plants);
+plants.push("bread");
