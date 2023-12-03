@@ -1,7 +1,12 @@
-const array1 = [1, 4, 9, 16];
+const array1 = [1, 2, 3];
 
-// Pass a function to map
-const map1 = array1.map((x) => x / 2);
+console.log(array1.includes(2));
+// Expected output: true
 
-console.log(map1);
-// Expected output: Array [2, 8, 18, 32]
+const pets = ["cat", "dog", "bat"];
+
+console.log(pets.includes("cat"));
+// Expected output: true
+
+console.log(pets.includes("at"));
+// Expected output: false
