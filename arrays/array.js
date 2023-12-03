@@ -1,7 +1,7 @@
-const plants = ["broccoli", "cauliflower", "cabbage", "kale", "tomato"];
+const array1 = [1, 4, 9, 16];
 
-console.log(plants.pop());
+// Pass a function to map
+const map1 = array1.map((x) => x * 2);
 
-console.log(plants);
-
-plants.pop("bread");
+console.log(map1);
+// Expected output: Array [2, 8, 18, 32]
