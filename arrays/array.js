@@ -7,3 +7,6 @@ const pets = ["cat", "dog", "bat"];
 console.log(pets.includes("cat"));
 
 console.log(pets.includes("at"));
+
+const time = new Date();
+console.log(time);
