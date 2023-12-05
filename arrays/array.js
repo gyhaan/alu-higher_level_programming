@@ -1,12 +1,6 @@
-const words = [
-  "spray",
-  "limit",
-  "elite",
-  "exuberant",
-  "destruction",
-  "present",
-];
+const isBelowThreshold = (currentValue) => currentValue < 40;
 
-const result = words.filter((word) => word.length > 6);
+const array1 = [1, 30, 39, 29, 10, 13];
 
-console.log(result);
+console.log(array1.every(isBelowThreshold));
+// Expected output: true
