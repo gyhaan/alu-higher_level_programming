@@ -1,12 +1,13 @@
-const array1 = [1, 2, 3];
+const words = [
+  "spray",
+  "limit",
+  "elite",
+  "exuberant",
+  "destruction",
+  "present",
+];
 
-console.log(array1.includes(2));
+const result = words.filter((word) => word.length > 6);
 
-const pets = ["cat", "dog", "bat"];
-
-console.log(pets.includes("cat"));
-
-console.log(pets.includes("at"));
-
-const time = new Date();
-console.log(time);
+console.log(result);
+// Expected output: Array ["exuberant", "destruction", "present"]
