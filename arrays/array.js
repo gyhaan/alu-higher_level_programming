@@ -4,4 +4,4 @@ const array1 = [1, 30, 39, 29, 10, 13];
 
 console.log(array1.every(isBelowThreshold));
 
-const animals = ["Dodo", "Tiger", "Penguin", "Dodo"];
+const animals = ["Dodo", "Tiger", "Dodo"];
