@@ -6,4 +6,5 @@ console.log(array1.every(isBelowThreshold));
 
 const animals = ["Dodo", "Whale", "Toucan", "Leopard"];
 
-animals.slice();
+const ind = animals.indexOf("Whale");
+console.log(ind);
