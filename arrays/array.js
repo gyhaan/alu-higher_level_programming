@@ -7,4 +7,3 @@ console.log(array1.every(isBelowThreshold));
 const animals = ["Dodo", "Whale", "Toucan", "Leopard"];
 
 const ind = animals.indexOf("Whale");
-console.log(ind);
