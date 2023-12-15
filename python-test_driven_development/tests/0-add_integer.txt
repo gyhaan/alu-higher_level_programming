@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 t for 0-add_integer.py:
+=======
+============================
+doctest for 0-add_integer.py
+>>>>>>> fe3fcaddafa60c2fd933e49960833c766c9229bd
 ============================
 ``add_integer()`` returns the sum of its arguments
 
@@ -118,4 +123,8 @@ testing how add_integer function handles float NaN argument
 ::
 >>> add_integer(float("NaN"), 1)
 Traceback (most recent call last):
+<<<<<<< HEAD
 ValueError: cannot convert float NaN to integer
+=======
+ValueError: cannot convert float NaN to integer
+>>>>>>> fe3fcaddafa60c2fd933e49960833c766c9229bd
