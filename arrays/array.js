@@ -2,8 +2,7 @@ const isBelowThreshold = (currentValue) => currentValue < 40;
 
 const array1 = [1, 30, 39, 29, 10, 13];
 
-console.log(array1.every(isBelowThreshold));
-
-const animals = ["Dodo", "Whale", "Toucan", "Leopard"];
-
-const ind = animals.pop("witness");
+function getMinMax(arr) {
+  const newarr = arr.slice().sort((a, b) => a - b);
+  return [newarr[0], newarr[newarr.length - 1]];
+}
