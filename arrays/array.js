@@ -6,3 +6,5 @@ function getMinMax(arr) {
   const newarr = arr.slice().sort((a, b) => a - b);
   return [newarr[0], newarr[newarr.length - 1]];
 }
+
+/* What is a callback function */
