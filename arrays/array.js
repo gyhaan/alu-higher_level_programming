@@ -47,3 +47,28 @@ function intersect(arr1, arr2) {
   }
   return union;
 }
+
+/* Q3 */
+function trial(str) {
+  if (str.includes("-")) {
+    const arr = str.split("-").map((el, i) => {
+      if (i === 0) {
+        return el;
+      } else {
+        return el[0].toUpperCase() + el.slice(1);
+      }
+    });
+    return arr.join("");
+  } else if (str.includes("_")) {
+    const arr = str.split("_").map((el, i) => {
+      if (i === 0) {
+        return el;
+      } else {
+        return el[0].toUpperCase() + el.slice(1);
+      }
+    });
+    return arr.join("");
+  } else {
+    return str;
+  }
+}
