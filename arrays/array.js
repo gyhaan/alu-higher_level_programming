@@ -35,4 +35,15 @@ function longestRepetition(s) {
   return [letter, real];
 }
 
-console.log(letterc(str));
+/* Q2 */
+function intersect(arr1, arr2) {
+  const union = [];
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (arr1[i] === arr2[j] && !union.includes(arr1[i])) {
+        union.push(arr1[i]);
+      }
+    }
+  }
+  return union;
+}
