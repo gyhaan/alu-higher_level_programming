@@ -8,20 +8,26 @@ function getMinMax(arr) {
 }
 
 /* Algos */
+
+/* Q1 */
 const str = "Successive";
 
-function letterc(str) {
+function longestRepetition(s) {
   checker = 1;
   real = 0;
   letter = "";
-  if (!str) return ["", 0];
-  for (let i = 0; i < str.length - 1; i++) {
-    if (str[i] === str[i + 1]) {
+  if (!s) return ["", 0];
+  for (let i = 0; i < s.length - 1; i++) {
+    if (s[i] === s[i + 1]) {
       checker++;
+      if (checker > real) {
+        real = checker;
+        letter = s[i];
+      }
     } else {
       if (checker > real) {
         real = checker;
-        letter = str[i];
+        letter = s[i];
       }
       checker = 1;
     }
