@@ -1,6 +1,6 @@
 const isBelowThreshold = (currentValue) => currentValue < 40;
 
-const array1 = [1, 30, 39, 29, 10, 13];
+const array1 = [1, 30, 39, 29, 10];
 
 function getMinMax(arr) {
   const newarr = arr.slice().sort((a, b) => a - b);
