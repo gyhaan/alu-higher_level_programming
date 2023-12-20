@@ -96,3 +96,11 @@ function returnDuplicates(arr) {
   }
   return duplicate;
 }
+
+/* Q4 */
+function countLetter(str) {
+  const tally = {};
+  for (let i = 0; i < str.length; i++) {
+    tally[str[i]] = (tally[str[i]] || 0) + 1;
+  }
+}
