@@ -72,3 +72,14 @@ function trial(str) {
     return str;
   }
 }
+
+/* Q4 */
+function retDuplicates(arr) {
+  const duplicate = [];
+  arr.forEach((el) => {
+    if (!duplicate.includes(el)) {
+      duplicate.push(el);
+    }
+  });
+  return duplicate;
+}
