@@ -83,3 +83,16 @@ function retDuplicates(arr) {
   });
   return duplicate;
 }
+
+/* Q5 */
+function returnDuplicates(arr) {
+  const duplicate = [];
+  for (let i = 0; i < arr.length; i++) {
+    const index = arr.indexOf(arr[i]);
+    console.log(index);
+    if (index !== i) {
+      duplicate.push(arr[i]);
+    }
+  }
+  return duplicate;
+}
