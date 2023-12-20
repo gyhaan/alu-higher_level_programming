@@ -109,3 +109,18 @@ function countLetter(str) {
 function factorial(n) {
   return n(n + 1) / 2;
 }
+
+/* Q6 */
+function findSumPairs(arr, value) {
+  let bool = false;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i; j < arr.length; j++) {
+      if (arr[i] + arr[j + 1] === value) {
+        bool = true;
+        break;
+      }
+    }
+    if (bool === true) break;
+  }
+  return bool;
+}
