@@ -104,3 +104,8 @@ function countLetter(str) {
     tally[str[i]] = (tally[str[i]] || 0) + 1;
   }
 }
+
+/* Q5 */
+function factorial(n) {
+  return n(n + 1) / 2;
+}
