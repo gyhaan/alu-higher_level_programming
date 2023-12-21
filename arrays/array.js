@@ -123,3 +123,14 @@ function findSumPairs(arr, value) {
   }
   return bool;
 }
+
+/* Q7 */
+function duplicate(arr) {
+  const newarr = [...arr];
+  for (let i = 0; i < arr.length; i++) {
+    console.log(newarr);
+    newarr.splice(i, 0, arr[i]);
+  }
+  console.log(newarr);
+  return newarr.sort((a, b) => a - b);
+}
