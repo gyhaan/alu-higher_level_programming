@@ -134,3 +134,8 @@ function duplicate(arr) {
   console.log(newarr);
   return newarr.sort((a, b) => a - b);
 }
+
+/* OR */
+function duplicate1(arr) {
+  return arr.map((el) => [el, el]).flat();
+}
