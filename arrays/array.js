@@ -139,3 +139,14 @@ function duplicate(arr) {
 function duplicate1(arr) {
   return arr.map((el) => [el, el]).flat();
 }
+
+/* Q8 */
+function norepeat(str) {
+  const arr = [];
+  for (let i = 0; i < str.length; i++) {
+    if (str.split("").indexOf(str[i]) === str.split("").lastIndexOf(str[i])) {
+      arr.push(str[i]);
+    }
+  }
+  return arr;
+}
