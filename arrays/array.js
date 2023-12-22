@@ -153,3 +153,31 @@ function norepeat(str) {
   }
   return arr;
 }
+
+/* Q9 */
+function dominator(arr) {
+  const tally = {};
+  arr.forEach((el, i) => {
+    tally[arr[i]] = (tally[arr[i]] || 0) + 1;
+  });
+  checker = Object.entries(tally);
+  console.log(checker);
+  dominate = [[0, 0]];
+  checker.forEach((el, i) => {
+    if (el[1] > dominate[0][1]) {
+      dominate = [el];
+    }
+
+    if (el[1] === dominate[0][1] && el[0] !== dominate[0][0]) {
+      console.log(el);
+      dominate.push(el);
+      console.log(dominate);
+    }
+  });
+
+  if (dominate.length !== 1) {
+    return -1;
+  } else {
+    return dominate[0][0];
+  }
+}
