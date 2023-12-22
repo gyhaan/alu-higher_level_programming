@@ -144,7 +144,10 @@ function duplicate1(arr) {
 function norepeat(str) {
   const arr = [];
   for (let i = 0; i < str.length; i++) {
-    if (str.split("").indexOf(str[i]) === str.split("").lastIndexOf(str[i])) {
+    if (
+      str.split("").indexOf(str[i]) === str.split("").lastIndexOf(str[i]) &&
+      str[i].toUpperCase() !== str[i].toLowerCase()
+    ) {
       arr.push(str[i]);
     }
   }
