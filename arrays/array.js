@@ -7,10 +7,6 @@ function getMinMax(arr) {
   return [newarr[0], newarr[newarr.length - 1]];
 }
 
-const array1 = ["a", "b", "c"];
-
-array1.forEach((element) => console.log(element));
-
 /* Algos */
 
 /* Q1 */
