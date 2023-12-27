@@ -188,3 +188,15 @@ function dominator(arr) {
     return dominate[0][0];
   }
 }
+
+/* Q10 */
+function noRepeat(str) {
+  const arr = [];
+  for (let i = 0; i < str.length; i++) {
+    if (arr.includes(str[i])) {
+      continue;
+    } else {
+      arr.push(str[i]);
+    }
+  }
+}
