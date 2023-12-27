@@ -7,11 +7,12 @@ function getMinMax(arr) {
   return [newarr[0], newarr[newarr.length - 1]];
 }
 
-const isBelowThreshold = (currentValue) => currentValue < 40;
+const arr1 = [1, 2, [3], [4, 5], 6, []];
 
-const array1 = [1, 30, 39, 29, 10, 13];
+const flattened = arr1.flatMap((num) => num);
 
-console.log(array1.every(isBelowThreshold));
+console.log(flattened);
+// Expected output: Array [1, 2, 3, 4, 5, 6]
 
 /* Algos */
 
