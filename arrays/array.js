@@ -7,12 +7,12 @@ function getMinMax(arr) {
   return [newarr[0], newarr[newarr.length - 1]];
 }
 
-const arr1 = [1, 2, [3], [4, 5], 6, []];
+const array1 = [5, 12, 8, 130, 44];
 
-const flattened = arr1.flatMap((num) => num);
+const found = array1.find((element) => element > 10);
 
-console.log(flattened);
-// Expected output: Array [1, 2, 3, 4, 5, 6]
+console.log(found);
+// Expected output: 12
 
 /* Algos */
 
