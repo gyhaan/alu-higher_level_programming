@@ -7,12 +7,17 @@ function getMinMax(arr) {
   return [newarr[0], newarr[newarr.length - 1]];
 }
 
-const array1 = [5, 12, 8, 130, 44];
+const array1 = ["one", "two", "three"];
+console.log("array1:", array1);
+// Expected output: "array1:" Array ["one", "two", "three"]
 
-const found = array1.find((element) => element > 10);
+const reversed = array1.reverse();
+console.log("reversed:", reversed);
+// Expected output: "reversed:" Array ["three", "two", "one"]
 
-console.log(found);
-// Expected output: 12
+// Careful: reverse is destructive -- it changes the original array.
+console.log("array1:", array1);
+// Expected output: "array1:" Array ["three", "two", "one"]
 
 /* Algos */
 
