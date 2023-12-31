@@ -195,3 +195,17 @@ function noRepeat(str) {
     }
   }
 }
+
+/* Q11 */
+function validIP(str) {
+  const arr = str.split(".");
+  if (arr.length !== 4) return "Invalid IPv4 address";
+  for (let i = 0; i < arr.length; i++) {
+    if (Number(arr[i]) >= 0 && Number(arr[i]) <= 255 && arr[i][0] !== "0") {
+      continue;
+    } else {
+      return "Invalid IPv4 address";
+    }
+  }
+  return "Valid IPv4 address";
+}
