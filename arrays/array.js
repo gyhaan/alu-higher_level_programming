@@ -232,3 +232,11 @@ function fakepalindrome(str) {
   }
   return str.toLowerCase() === newStr.toLowerCase();
 }
+
+/* Q14 */
+function palindrome(str) {
+  const regex = /[^a-zA-Z0-9]+/g;
+  const arr = str.split(regex).join("").toLowerCase();
+  console.log();
+  return arr === arr.split("").reverse().join("");
+}
