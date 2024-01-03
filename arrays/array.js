@@ -222,3 +222,13 @@ function moveZeroes(arr) {
   }
   return arr;
 }
+
+/* Q13 */
+function fakepalindrome(str) {
+  let newStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    newStr = newStr + str[i];
+    console.log(newStr, str[i]);
+  }
+  return str.toLowerCase() === newStr.toLowerCase();
+}
