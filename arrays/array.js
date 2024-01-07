@@ -230,3 +230,13 @@ function palindrome(str) {
   console.log();
   return arr === arr.split("").reverse().join("");
 }
+
+/* Q15 */
+function secondSymbol(s, symbol) {
+  for (let i = 0; i < s.length; i++) {
+    if (s.indexOf(s[i]) !== i && s[i] === symbol) {
+      return i;
+    }
+  }
+  return -1;
+}
