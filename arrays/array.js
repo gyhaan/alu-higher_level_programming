@@ -240,3 +240,18 @@ function secondSymbol(s, symbol) {
   }
   return -1;
 }
+
+/* Q16 */
+function smaller(nums) {
+  const arr = [];
+  for (let i = 0; i < nums.length; i++) {
+    let counter = 0;
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] > nums[j]) {
+        counter++;
+      }
+    }
+    arr.push(counter);
+  }
+  return arr;
+}
