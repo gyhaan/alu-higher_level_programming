@@ -255,3 +255,13 @@ function smaller(nums) {
   }
   return arr;
 }
+
+/* Q17 */
+function rotate(arr, key) {
+  if (key < 0 || typeof key === "undefined") return arr;
+  if (Math.abs(arr.length - key) > arr.length) return arr.reverse();
+  const arr1 = arr.slice(arr.length - key);
+  arr.splice(arr.length - key, key);
+  arr.splice(0, 0, ...arr1);
+  return arr;
+}
