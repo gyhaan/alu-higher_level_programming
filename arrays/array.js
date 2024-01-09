@@ -265,3 +265,22 @@ function rotate(arr, key) {
   arr.splice(0, 0, ...arr1);
   return arr;
 }
+
+/* Q18 */
+function removeDuplicates(arr) {
+  const retarray = [];
+  const underscorearr = [];
+  let k = 0;
+  const length = arr.length;
+  for (let i = 0; i < arr.length; i++) {
+    if (!retarray.includes(arr[i])) {
+      retarray.push(arr[i]);
+      k++;
+    } else {
+      underscorearr.push("_");
+    }
+  }
+  arr.length = 0;
+  arr.push(...retarray, ...underscorearr);
+  return k;
+}
