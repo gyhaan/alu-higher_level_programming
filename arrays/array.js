@@ -212,14 +212,17 @@ function validIP(str) {
 
 /* Q12 */
 function moveZeroes(arr) {
+  let zeroarr = [];
+  let nonzeroarr = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 0) {
-      arr.splice(i, 1);
-      arr.push(0);
+      zeroarr.push(0);
     } else {
-      continue;
+      nonzeroarr.push(arr[i]);
     }
   }
+  arr.length = 0;
+  arr.push(...nonzeroarr, ...zeroarr);
   return arr;
 }
 
