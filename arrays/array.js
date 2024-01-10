@@ -299,3 +299,14 @@ function maxProfit(arr) {
   }
   return profit;
 }
+
+/* Q20 */
+function twoSum(arr, value) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] + arr[j] === value) {
+        return [i, j];
+      }
+    }
+  }
+}
