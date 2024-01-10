@@ -284,3 +284,15 @@ function removeDuplicates(arr) {
   arr.push(...retarray, ...underscorearr);
   return k;
 }
+
+/* Q19 */
+function maxProfit(arr) {
+  let profit = 0;
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i + 1] > arr[i]) {
+      let num = arr[i + 1] - arr[i];
+      profit += num;
+    }
+  }
+  return profit;
+}
