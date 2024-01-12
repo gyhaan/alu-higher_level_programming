@@ -319,3 +319,19 @@ function singleNumber(arr) {
     }
   }
 }
+
+/* Q22 */
+function intersectarr(arr1, arr2) {
+  const union = [];
+  const checker = [];
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (arr1[i] === arr2[j] && !checker.includes(j)) {
+        union.push(arr1[i]);
+        checker.push(j);
+        break;
+      }
+    }
+  }
+  return union;
+}
