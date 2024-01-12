@@ -335,3 +335,13 @@ function intersectarr(arr1, arr2) {
   }
   return union;
 }
+
+/* Q23 */
+function containsDuplicate(arr) {
+  const checker = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (checker.includes(arr[i])) return true;
+    checker.push(arr[i]);
+  }
+  return false;
+}
