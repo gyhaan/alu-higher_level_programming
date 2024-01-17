@@ -357,3 +357,17 @@ function checkDiff(arr1, arr2) {
   }
   return true;
 }
+
+/* Q25 */
+function returnDiff(arr1, arr2) {
+  const diffarray = [];
+  for (let i = 0; i < arr1.length + Math.abs(arr1.length - arr2.length); i++) {
+    if (!arr2.includes(arr1[i]) && typeof arr1[i] !== "undefined") {
+      diffarray.push(arr1[i]);
+    }
+    if (!arr1.includes(arr2[i]) && typeof arr2[i] !== "undefined") {
+      diffarray.push(arr2[i]);
+    }
+  }
+  return diffarray;
+}
