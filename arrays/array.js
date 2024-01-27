@@ -371,3 +371,26 @@ function returnDiff(arr1, arr2) {
   }
   return diffarray;
 }
+
+/* Q26 */
+function summaryRange(arr) {
+  const newarr = [...new Set(arr)];
+  const summary = [];
+  const container = [newarr[0]];
+  for (let i = 0; i < newarr.length; i++) {
+    if (newarr[i + 1] === newarr[i] + 1) {
+      container.push(newarr[i + 1]);
+    } else {
+      if (container.length === 1) {
+        summary.push(`${container[0]}`);
+        container.length = 0;
+        container[0] = newarr[i + 1];
+      } else {
+        summary.push(`${container[0]} --> ${container[container.length - 1]}`);
+        container.length = 0;
+        container[0] = newarr[i + 1];
+      }
+    }
+  }
+  return summary;
+}
