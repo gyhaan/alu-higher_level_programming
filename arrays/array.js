@@ -394,3 +394,22 @@ function summaryRange(arr) {
   }
   return summary;
 }
+
+
+/* Q27 */
+function high(x) {
+  let letter = "";
+  const arr = x.split(" ");
+  let score = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let init = 0;
+    for (let j = 0; j < arr[i].length; j++) {
+      init += arr[i].codePointAt(j) - 96;
+    }
+    if (init > score) {
+      score = init;
+      letter = arr[i];
+    }
+  }
+  return letter;
+}
