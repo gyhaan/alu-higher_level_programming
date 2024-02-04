@@ -395,7 +395,6 @@ function summaryRange(arr) {
   return summary;
 }
 
-
 /* Q27 */
 function high(x) {
   let letter = "";
@@ -412,4 +411,25 @@ function high(x) {
     }
   }
   return letter;
+}
+
+/* Q28 */
+function topThreeWords(text) {
+  const regex = /[^A-Za-z']+/g;
+  const arr = text.split(regex);
+  const answer = [];
+  const tally = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "" || arr[i] === "'") continue;
+    tally[arr[i].toLowerCase()] = (tally[arr[i].toLowerCase()] || 0) + 1;
+  }
+
+  const x = Object.entries(tally);
+  x.sort((a, b) => b[1] - a[1]);
+  for (let i = 0; i < 3; i++) {
+    if (x[i] === undefined) continue;
+    answer.push(x[i][0]);
+  }
+
+  return answer;
 }
